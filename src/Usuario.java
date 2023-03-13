@@ -4,10 +4,16 @@ public class Usuario {
 
         SmartTv smartTv = new SmartTv();
 
-        System.out.println("A Tv está ligada? " + smartTv.ligada);
+        String tvFuncionando = smartTv.tv == "Ligada" ? "Ligada" : "Desligada";
+
+        System.out.println("A Tv está " + tvFuncionando);
+
+        if (tvFuncionando == "Desligada") {
+            return;
+        }
 
         smartTv.ligar();
-        System.out.println("Status -> Tv ligada? " + smartTv.ligada);
+        System.out.println("Status da TV " + smartTv.tv);
 
         System.out.println("Canal: " + smartTv.canal);
 
@@ -22,7 +28,7 @@ public class Usuario {
         smartTv.mudarCanal(15);
 
         smartTv.desligar();
-        System.out.println("Status -> Tv ligada? " + smartTv.ligada);
+        System.out.println("Status da TV " + smartTv.tv);
 
     }
 

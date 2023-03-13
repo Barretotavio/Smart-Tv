@@ -1,15 +1,15 @@
 public class SmartTv {
 
-    boolean ligada = false;
+    String tv = "Ligada";
     int canal = 1;
     int volume = 25;
 
     public void ligar() {
-        ligada = true;
+        tv = "Ligada";
     }
 
     public void desligar() {
-        ligada = false;
+        tv = "Desligada";
     }
 
     public void aumentarVolume() {
